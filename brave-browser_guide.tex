@@ -1,0 +1,16 @@
+\documentclass{article}
+\newcommand{\shellcmd}[1]{\\\indent\indent\texttt{\footnotesize\ #1}\\}
+\begin{document}
+\section{Install Brave Browser}
+\noindent Add RPM repository:
+\shellcmd{sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86\_64/}
+\noindent Import repository key:
+\shellcmd{sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc}
+\noindent Then install Brave web browser on Fedora:
+\shellcmd{sudo dnf install brave-browser}
+\section{Extensions}
+I have add the following extensions on Brave Browser:
+\begin{itemize}
+	\item Dark Reader : A dark theme for every website.
+\end{itemize}
+\end{document}
